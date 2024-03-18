@@ -1,0 +1,119 @@
+/* home banner css */
+:root {
+  --font-montserrat: "AvertaStd", sans-serif;
+  --font-Averta: "AvertaStd", sans-serif;
+  --font-garamond: "Old Standard TT";
+  --font-old--standard-tt: "Old Standard TT";
+  --color-green: #10312b;
+}
+
+.__container {
+  max-width: 92%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.web-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.banner_cnt {
+  display: grid;
+  grid-template-columns: 5% 62% 33%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.banner_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.banner_text {
+  background-color: rgb(244 245 249);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.banner_text p {
+  width: 420px;
+  font-size: 70px;
+  line-height: 63px;
+  color: #000000;
+  font-family: "Adobe Garamond Pro";
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner_text button {
+  background-color: rgb(71 212 178);
+  padding: 25px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 2.4px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #181818;
+  font-family: "AvertaStd";
+  font-weight: 500;
+  border-radius: 40px;
+  margin: 80px auto 0;
+}
+
+.about_us_scn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 100%;
+  height: 110vh;
+  background: rgb(216 223 231);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.DisplayNone {
+  display: none;
+}
+.about_title h3 {
+  font-size: 62px;
+  letter-spacing: 1px;
+  line-height: 52px;
+  color: #000000;
+  font-family: "Adobe Garamond Pro";
+  text-wrap: wrap;
+  font-weight: 400;
+  width: 20ch;
+}
+.DefaultPage2AboutTitle h3 {
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 5px;
+  font-family: "Adobe Garamond Pro";
+}
+p.about_us_cnt {
+  font-size: 19px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 500;
+  font-family: "AvertaStd";
+  letter-spacing: 0.5px;
+}
+.about_us_cnt2 {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  color: #000;
+}

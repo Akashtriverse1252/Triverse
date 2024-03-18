@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --color-text: #fff;
+  --color-bg: #000;
+  --color-link: #fff;
+  --color-link-hover: #fff;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  place-items: center;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 1 / -1 / -1;
+  pointer-events: none;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+  will-change: transform, opacity;
+}
+
+.slide--current {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.deco {
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 1 / -1 / -1;
+  pointer-events: none;
+  position: relative;
+  opacity: 0;
+  background: #8c718e;
+  will-change: transform, opacity;
+}
+
+.deco--1 {
+  background: #d46253;
+}
+
+.deco--2 {
+  background: #525252;
+}
+
+.deco--3 {
+  background: #beb2b2;
+}
+
+.deco--4 {
+  background: #000;
+}
+
+.deco--5 {
+  background: #060b17;
+}
+
+.deco--6 {
+  background: #34365c;
+}
+
+.deco--7 {
+  background: #9f6794;
+}
+
+.slide__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  will-change: transform, opacity, filter;
+}
+
+.slides-nav {
+  grid-area: nav;
+  display: flex;
+  gap: 0.5rem;
+  align-self: end;
+  align-items: center;
+}
+
+/* .slides-nav::before {
+  content: "scroll / drag";
+  margin-right: 2rem;
+} */
+
+.slides-nav__item {
+  border: 0;
+  background: #fff;
+  color: #000;
+  width: 60px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slides-nav__item:hover {
+  background-color: #ccc;
+}
+
+@media screen and (min-width: 53em) {
+  .frame {
+    height: 100vh;
+    grid-gap: 2rem;
+    align-content: space-between;
+    grid-template-columns: auto auto auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title back prev demos" "sponsor ... ... nav ";
+  }
+  .frame__demos {
+    justify-self: end;
+    justify-content: end;
+  }
+  .frame__demos span,
+  a.frame__demo {
+    text-align: right;
+  }
+  .slides-nav {
+    justify-self: end;
+  }
+  body #cdawrap {
+    align-self: center;
+    justify-self: start;
+  }
+}

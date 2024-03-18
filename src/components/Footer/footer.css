@@ -1,0 +1,128 @@
+/* home banner css */
+:root {
+  --font-montserrat: "AvertaStd", sans-serif;
+  --font-Averta: "AvertaStd", sans-serif;
+  --font-garamond: "Old Standard TT";
+  --font-old--standard-tt: "Old Standard TT";
+  --color-green: #10312b;
+}
+.footer {
+  width: 100%;
+  float: left;
+  padding: 100px 0 0;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.footerstn {
+  background: #143058;
+  padding: 150px;
+  border-radius: 100px 100px 0 0;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.footerrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.footercol {
+  width: 40%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.footercol h3 {
+  color: #ffb14d;
+  font-size: 48px;
+}
+
+.footercol p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.footeraddress {
+  width: 60%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 25px;
+  margin: 0 20%;
+  border-radius: 100px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.footeraddress h4 {
+  width: 100%;
+  float: left;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.footeraddress p {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+}
+
+p.copyright {
+  font-size: 14px;
+  color: #b5b5b5;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.footerrow:before {
+  content: "";
+  border-bottom: dashed 1px #c1c1c1;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+}
+
+img.linkedin {
+  position: absolute;
+  right: -24%;
+}
+
+.DefaultPage2:before {
+  content: "";
+  background-image: url(../../image/footer-icon.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+  top: 5rem;
+  right: 14.45rem;
+  height: 50px;
+  background-size: contain;
+  width: 100%;
+}
+
+.product-slider .box-icon {
+  margin: 0;
+  left: 3em;
+}
+
+.quoteDIv .Circles {
+  top: 15rem !important;
+  right: 6rem;
+}
+
+.footeraddress img {
+  position: absolute;
+  left: -15em;
+  bottom: 0;
+}
