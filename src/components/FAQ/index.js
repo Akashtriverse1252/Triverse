@@ -19,7 +19,16 @@ const Index = () => {
 
   return (
     <>
-      <WebLayout _sclass="Faq" _class="Faq_scn">
+      <WebLayout _sclass="Faq bg-white" _class="Faq_scn">
+        <div
+          class="heading"
+          data-aos="fade-in"
+          data-aos-delay="500"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <h3>FAQ</h3>
+        </div>
         <div className="Faq_cnt">
           <Accordion
             open={open === 1}

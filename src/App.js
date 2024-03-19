@@ -7,15 +7,20 @@ import "aos/dist/aos.css";
 import "./css/font/stylesheet.css";
 import "./css/Responsive.css";
 import Aos from "aos";
+import Header from "./components/Header";
 
 function App() {
   Aos.init();
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <>
+    <Header/>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
+      
+    </>
   );
 }
 

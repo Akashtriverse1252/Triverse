@@ -22,12 +22,20 @@ section {
   padding: 50px 0;
   margin: 0 auto;
 }
+section.banner {
+  padding-top: 30px;
+  position: fixed;
+}
 .banner_cnt {
   display: grid;
   grid-template-columns: 5% 62% 33%;
-  grid-template-rows: 1fr;
+  grid-template-rows: 80vh;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 100vw;
+}
+.banner_image {
+  position: relative;
 }
 .banner_image img {
   object-fit: cover;
@@ -97,6 +105,15 @@ section {
   text-wrap: wrap;
   font-weight: 400;
   width: 20ch;
+  position: relative;
+}
+.about_title h3:before {
+  content: "";
+  width: 120px;
+  position: absolute;
+  top: -40px;
+  height: 2px;
+  background: #ffb14d;
 }
 .DefaultPage2AboutTitle h3 {
   text-transform: uppercase;
@@ -116,4 +133,193 @@ p.about_us_cnt {
   font-size: 17px;
   letter-spacing: 0.6px;
   color: #000;
+  margin-top: 12px;
+}
+a.aboutshow {
+  margin-top: 25px;
+}
+section.service,
+section.about_us {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+}
+section.about_us {
+  padding-top: 0;
+}
+
+.Faq_cnt {
+  width: 80%;
+  margin: 0 auto;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.heading {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading h3 {
+  font-size: 62px;
+  letter-spacing: 1px;
+  line-height: 52px;
+  color: #000000;
+  font-family: "Adobe Garamond Pro";
+  text-wrap: wrap;
+  font-weight: 400;
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+}
+.heading h3:before {
+  content: "";
+  background: rgb(255 177 77);
+  width: 110px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: TRANSLATEX(-50%);
+}
+.box {
+  width: 25%;
+  float: left;
+  position: relative;
+  padding: 50px 0;
+}
+.box h4 {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 18px 0;
+  text-transform: capitalize;
+}
+.box ul {
+  padding-left: 5px;
+}
+.box ul li {
+  margin: 10px 0;
+  list-style: none;
+  font-weight: 500;
+  color: #3c3c3c;
+  font-size: 17px;
+}
+.box:before {
+  content: "";
+  width: 70px;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: #ec8962;
+}
+.box:nth-child(6):before,
+.box:nth-child(7):before,
+.box:nth-child(5):before,
+.box:nth-child(4):before {
+  opacity: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.box:nth-child(6) .box:nth-child(7) .box:nth-child(5) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.service-box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 10%;
+}
+
+.sectionOnHover {
+  position: absolute;
+  z-index: 12;
+  top: 70%;
+  right: -110%;
+  rotate: -13deg;
+  height: 100%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(0);
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  transition: -webkit-transform 0.45s cubic-bezier(0.4, 0, 0, 1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0, 1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0, 1),
+    -webkit-transform 0.45s cubic-bezier(0.4, 0, 0, 1);
+  z-index: 9999;
+  width: 280px;
+  height: 380px;
+}
+
+.sectionOnHover.isVisible {
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  z-index: 50 !important;
+}
+
+.sectionOnHover img {
+  z-index: 115;
+  position: relative;
+}
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url("../image/branding-01.png");
+  }
+  12.5% {
+    background-image: url("../image/branding-02.png"); /* Same image as starting to maintain consistency */
+  }
+  12.6% {
+    background-image: url("../image/branding-02.png");
+  }
+  25% {
+    background-image: url("../image/branding-03.png");
+  }
+  25.1% {
+    background-image: url("../image/branding-03.png");
+  }
+  37.5% {
+    background-image: url("../image/branding-04.png");
+  }
+  37.6% {
+    background-image: url("../image/branding-04.png");
+  }
+  50% {
+    background-image: url("../image/branding-05.png");
+  }
+  50.1% {
+    background-image: url("../image/branding-05.png");
+  }
+  62.5% {
+    background-image: url("../image/branding-06.png");
+  }
+  62.6% {
+    background-image: url("../image/branding-06.png");
+  }
+  75% {
+    background-image: url("../image/branding-07.png");
+  }
+  75.1% {
+    background-image: url("../image/branding-07.png");
+  }
+  87.5% {
+    background-image: url("../image/branding-08.png");
+  }
+  87.6% {
+    background-image: url("../image/branding-08.png");
+  }
+  100% {
+    background-image: url("../image/branding-01.png");
+  }
+}
+
+.sectionOnHover {
+  background-color: #d8dfe7;
+  animation: changeBackgroundImage 3.4s infinite; /* 8 images * 4 seconds each */
 }

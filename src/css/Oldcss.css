@@ -206,81 +206,16 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.heading {
-  width: 100%;
-  float: left;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.heading h3 {
-  font-size: 40px;
-  padding: 0 250px;
-  line-height: 46px;
-  position: relative;
-  display: inline-block;
-}
-.heading h3:before {
-  content: "";
-  background: #ec8962;
-  width: 70px;
-  height: 3px;
-  position: absolute;
-  left: 12%;
-  top: 24%;
-}
+
 .service {
   float: left;
   width: 100%;
   position: relative;
   padding: 80px 0;
 }
-.box {
-  width: 25%;
-  float: left;
-  position: relative;
-  padding: 50px 0;
-}
-.service-box {
-  display: flex;
-  width: 100%;
-  float: left;
-  flex-wrap: wrap;
-}
-.box h4 {
-  font-size: 25px;
-  line-height: 30px;
-  margin: 15px 0;
-}
-.box ul li {
-  margin: 5px 0;
-  list-style: none;
-}
-.box:before {
-  content: "";
-  width: 70px;
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  background: #ec8962;
-}
-.box:nth-child(6):before,
-.box:nth-child(7):before,
-.box:nth-child(5):before,
-.box:nth-child(4):before {
-  opacity: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.box:nth-child(6) .box:nth-child(7) .box:nth-child(5) {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.box:nth-child(5),
-.box:nth-child(6),
-.box:nth-child(7) {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+
+
+
 .quoteDIv {
   width: 100%;
   float: left;

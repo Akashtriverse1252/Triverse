@@ -5,7 +5,7 @@ import footerelement from "../../image/footer-icon.png";
 
 const index = () => {
   return (
-    <ContainerLayout>
+    <ContainerLayout _sclass="footer pb-0 bg-white" _class="footer_scn">
       <div className="footerstn">
         <div className="footerrow">
           <div

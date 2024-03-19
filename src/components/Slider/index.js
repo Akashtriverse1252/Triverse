@@ -5,7 +5,9 @@ import preloadImages from "./ImagePreLoader"; // Import preloadImages function
 import slide1 from "../../image/slide.jpg";
 import "./index.css";
 import { Observer } from "gsap/Observer";
-import banner_image from "../../image/BANNER IMAGE.jpg";
+import banner_image from "../../image/banner-01.jpg";
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
 
 const NEXT = 1;
 const PREV = -1;
@@ -97,12 +99,8 @@ const Slideshow = () => {
         <div className="deco deco--3"></div>
       </div>
       <div className="slides-nav">
-        <button className="slides-nav__item slides-nav__item--prev">
-          Previous
-        </button>
-        <button className="slides-nav__item slides-nav__item--next">
-          Next
-        </button>
+        <button className="slides-nav__item slides-nav__item--prev"><SlArrowLeft /></button>
+        <button className="slides-nav__item slides-nav__item--next"><SlArrowRight /></button>
       </div>
     </>
   );
