@@ -22,9 +22,17 @@ section {
   padding: 50px 0;
   margin: 0 auto;
 }
+
 section.banner {
   padding-top: 30px;
   position: fixed;
+  top: 120px;
+}
+.header {
+  margin: 30px 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .banner_cnt {
   display: grid;
@@ -62,6 +70,7 @@ section.banner {
   text-align: left;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .banner_text button {
@@ -77,7 +86,33 @@ section.banner {
   font-family: "AvertaStd";
   font-weight: 500;
   border-radius: 40px;
-  margin: 80px auto 0;
+  margin-top: 80px;
+  width: fit-content;
+}
+
+.home_project_image{
+  position: relative;
+}
+.home_project_image:after {
+  transition: 1.2s ease-out;
+  transition-delay: 0.2s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+  transform: scale(1, 1);
+  transform-origin: right center;
+  transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+  content: "";
+}
+
+.img_revealed.home_project_image:after {
+  transform: scale(0, 1);
 }
 
 .about_us_scn {

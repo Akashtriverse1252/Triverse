@@ -9,11 +9,23 @@ const index = () => {
         <div className="container">
           <div className="row">
             <div className="header_cnt flex justify-between items-baseline    ">
-              <div className="logo">
+              <div
+                className="logo"
+                data-aos="fade-in"
+                data-aos-delay={200}
+                data-aos-once="true"
+                data-aos-duration={1200}
+              >
                 <Logo />
               </div>
               <a href="#" className="get_connect">
-                <div className="header_cnt_cnt">
+                <div
+                  className="header_cnt_cnt"
+                  data-aos="fade-in"
+                  data-aos-delay={200}
+                  data-aos-once="true"
+                  data-aos-duration={1200}
+                >
                   <span> GET IN TOUCH</span>
                 </div>
               </a>

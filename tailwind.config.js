@@ -11,6 +11,7 @@ module.exports = withMT({
         poppins: ["Poppins", "sans"],
         roboto: ["Roboto", "sans"],
         Averta: ["AvertaStd", "sans"],
+        GaramondPro: ['Adobe Garamond Pro'],
       },
       screens: {
         "4xl": "1700px",

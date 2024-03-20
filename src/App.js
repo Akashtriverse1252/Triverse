@@ -13,7 +13,7 @@ function App() {
   Aos.init();
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
