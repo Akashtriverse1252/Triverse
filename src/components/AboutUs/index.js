@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import WebLayout from "../WebLayout";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Index = () => {
   useEffect(() => {
@@ -24,9 +25,11 @@ const Index = () => {
     };
   }, []);
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
+  const [containerHeight, setContainerHeight] = useState("auto");
 
   const toggleReadMore = () => {
     setIsReadMoreOpen(!isReadMoreOpen);
+    setContainerHeight(containerHeight === "auto" ? "auto" : "0");
   };
   return (
     <>
@@ -138,72 +141,83 @@ const Index = () => {
                 <h3>Top brand creative agency based in gurgaon</h3>
                 <div className="Line " />
               </div>
-              <div className="SpecialDesc floatL Width100">
+              <div className="SpecialDesc floatL Width100 flex flex-col">
                 <p
                   data-aos="fade-up"
-                  data-aos-delay={500}
+                  data-aos-delay="500"
                   data-aos-once="true"
-                  data-aos-duration={1000}
-                  className="about_us_cnt"
+                  data-aos-duration="1000"
+                  class="text-base leading-7 mb-4 float-left w-full"
                 >
                   As a full-service brand and design agency, Triverse
                   Advertising offers everything from digital content and brand
                   strategy to packaging and collateral design.
                 </p>
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay={600}
-                  data-aos-once="true"
-                  data-aos-duration={1100}
-                  className="about_us_cnt2"
-                >
-                  Since 2008, we’ve been bringing storytelling, strategy and
-                  compelling visual design together, to devise approaches
-                  specific to each brand. Triverse Advertising helps in creating
-                  powerful new brands or rejuvenating existing brands.
-                </p>
-                <p
-                  className=""
-                  style={{ display: isReadMoreOpen ? "inline" : "none" }}
-                >
-                  We’re open-minded, our clients come from all sectors, from
-                  family-run businesses to global corporates and everything in
-                  between. It keeps us fresh and the work interesting.
-                </p>
-                <p
-                  className=""
-                  style={{ display: isReadMoreOpen ? "inline" : "none" }}
-                >
-                  We are small with big agency expertise. We evolve quickly and
-                  are able to balance fast turnaround time with personal
-                  attention to all our clients. A team of multi-skilled
-                  individuals means smaller team on each project which
-                  translates into better value for you.
-                </p>
-                <p
-                  className=""
-                  style={{ display: isReadMoreOpen ? "inline" : "none" }}
-                >
-                  In a short period of time we became one of the top advertising
-                  agencies in Gurgaon, Delhi NCR. We look forward to being your
-                  trusted creative partner.
-                </p>
               </div>
-              <div
-                className="floatL Width100 "
-                data-aos="fade-right"
-                data-aos-delay={500}
-                data-aos-once="true"
-                data-aos-duration={1000}
-              >
-                <div className="SpecialLink IWantAMouseOVerNowBut75">
-                  <a
-                    title="More About US"
-                    className="aboutshow font-normal uppercase text-[15px]"
-                    onClick={toggleReadMore}
+
+              <div>
+                <div
+                  className="about_us_data overflow-hidden transition-all duration-500"
+                  style={{ maxHeight: containerHeight }}
+                >
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                    className="text-base leading-7 mb-4 float-left w-full"
                   >
-                    Read more
-                  </a>
+                    Since 2008, we’ve been bringing storytelling, strategy and
+                    compelling visual design together, to devise approaches
+                    specific to each brand. Triverse Advertising helps in
+                    creating powerful new brands or rejuvenating existing
+                    brands.
+                  </p>
+                </div>
+                  <div
+                    className={`readMoreDiv ${isReadMoreOpen ? "open" : ""}`}
+                  >
+                    <p
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                      data-aos-once="true"
+                      data-aos-duration="1000"
+                      className="text-base leading-7 mb-4 float-left w-full"
+                    >
+                      We’re open-minded, our clients come from all sectors, from
+                      family-run businesses to global corporates and everything
+                      in between. It keeps us fresh and the work interesting.
+                    </p>
+                    <p
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                      data-aos-once="true"
+                      data-aos-duration="1000"
+                      className="text-base leading-7 mb-4 float-left w-full"
+                    >
+                      We are small with big agency expertise. We evolve quickly
+                      and are able to balance fast turnaround time with personal
+                      attention to all our clients. A team of multi-skilled
+                      individuals means smaller team on each project which
+                      translates into better value for you.
+                    </p>
+                    <p
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                      data-aos-once="true"
+                      data-aos-duration="1000"
+                      className="text-base leading-7 mb-4 float-left w-full"
+                    >
+                      In a short period of time we became one of the top
+                      advertising agencies in Gurgaon, Delhi NCR. We look
+                      forward to being your trusted creative partner.
+                    </p>
+                  </div>
+                <div
+                  className="about_us_readmore flex uppercase text-[13px] tracking-[1.5px] relative font-semibold w-fit cursor-pointer text-blue-500"
+                  onClick={toggleReadMore}
+                >
+                  {isReadMoreOpen ? <>Read less</> : <>Read more</>}
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 .track {
-  height: 160vh;
+  height: 300vh;
 }
 
 .sticky {
@@ -184,26 +184,22 @@
 .details_date,
 .details_subtitle,
 .details_title {
-    opacity: 0;
-    bottom: -15px;
-    transition: ease 0.4s all;
-    transition-delay: 0.3s;
-    position: relative;
+  opacity: 0;
+  bottom: -15px;
+  transition: ease 0.4s all;
+  transition-delay: 0.3s;
+  position: relative;
 }
-.details_subtitle{
-    transition-delay: 0.4s;
-    
+.details_subtitle {
+  transition-delay: 0.4s;
 }
-.details_date{
-    transition-delay: 0.5s;
+.details_date {
+  transition-delay: 0.5s;
 }
 
-
-  
 .project-details-wrapper:hover .details_date,
 .project-details-wrapper:hover .details_subtitle,
 .project-details-wrapper:hover .details_title {
-    opacity: 1;
-    bottom: 0;
+  opacity: 1;
+  bottom: 0;
 }
-

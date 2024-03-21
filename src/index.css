@@ -318,12 +318,13 @@ h6 {
 }
 
 .scroll-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   will-change: transform;
+  z-index: 10;
 }
 
 body::-webkit-scrollbar {

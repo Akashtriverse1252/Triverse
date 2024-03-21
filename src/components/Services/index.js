@@ -13,13 +13,13 @@ const ServiceBox = ({ title, items }) => {
           <li
             key={index}
             className="list-item"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            // onMouseEnter={() => setIsHovered(true)}
+            // onMouseLeave={() => setIsHovered(false)}
           >
             {item}
-            <div className={`sectionOnHover ${isHovered ? "isVisible" : ""}`}>
-              {/* <img src={hoverimg} alt="img" /> */}
-            </div>
+            {/* <div className={`sectionOnHover ${isHovered ? "isVisible" : ""}`}>
+              <img src={hoverimg} alt="img" />
+            </div> */}
           </li>
         ))}
       </ul>

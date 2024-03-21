@@ -38,7 +38,7 @@ const Index = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className="bg-[#e9ecf1] rounded-full px-16 mb-4 py-5 font-Averta text-[25px] border-none"
+              className="bg-[#e9ecf1] rounded-full px-8 mb-4 py-5 font-[400] font-Averta text-[25px] border-none"
             >
               What is branding and why is it important?
             </AccordionHeader>
@@ -63,12 +63,12 @@ const Index = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              className="bg-[#e9ecf1] rounded-full px-16 mb-4 py-5 font-Averta text-[25px] border-none"
+              className="bg-[#e9ecf1] rounded-full px-8 font-[400] mb-4 py-5 font-Averta text-[25px] border-none"
             >
               What is brand strategy and why is it important?
             </AccordionHeader>
             <AccordionBody
-              className=" font-Averta text-[20px] leading-relaxed font-[400] w-[88%] mx-auto  tracking-tight text-black mb-[30px]
+              className=" font-Averta text-[20px]  leading-relaxed font-[400] w-[88%] mx-auto  tracking-tight text-black mb-[30px]
 
             "
             >
@@ -88,7 +88,7 @@ const Index = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              className="bg-[#e9ecf1] rounded-full px-16 mb-4 py-5 font-Averta text-[25px] border-none"
+              className="bg-[#e9ecf1] rounded-full px-8 mb-4 font-[400] py-5 font-Averta text-[25px] border-none"
             >
               What are the deliverables of a branding project?
             </AccordionHeader>
@@ -113,7 +113,7 @@ const Index = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              className="bg-[#e9ecf1] rounded-full px-16 mb-4 py-5 font-Averta text-[25px] border-none"
+              className="bg-[#e9ecf1] rounded-full px-8 mb-4 font-[400] py-5 font-Averta text-[25px] border-none"
             >
               How long does a typical branding project take to complete?
             </AccordionHeader>

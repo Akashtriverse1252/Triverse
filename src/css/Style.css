@@ -6,7 +6,12 @@
   --font-old--standard-tt: "Old Standard TT";
   --color-green: #10312b;
 }
-
+body {
+  font-size: 16px;
+  line-height: 28px;
+  float: left;
+  color: #000;
+}
 .__container {
   max-width: 92%;
   text-align: center;
@@ -90,7 +95,7 @@ section.banner {
   width: fit-content;
 }
 
-.home_project_image{
+.home_project_image {
   position: relative;
 }
 .home_project_image:after {
@@ -358,3 +363,60 @@ section.about_us {
   background-color: #d8dfe7;
   animation: changeBackgroundImage 3.4s infinite; /* 8 images * 4 seconds each */
 }
+.main_container_of_element {
+  background-color: #fff !important;
+}
+
+.about_us_readmore::after {
+  content: "\25BC";
+  transform: rotate(271deg);
+  position: absolute;
+  top: -1px;
+  right: -25px;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Define slide-out animation */
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+/* Apply slide-in animation */
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Apply slide-out animation */
+.slide-out {
+  animation: slideOut 0.5s ease forwards;
+}
+
+.readMoreDiv {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.readMoreDiv.open {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
+

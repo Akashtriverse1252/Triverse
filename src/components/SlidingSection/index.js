@@ -6,7 +6,7 @@ const TrackAnimation = () => {
   const controls = useAnimation();
   const bannerRef = useRef(null);
   const { scrollYProgress } = useScroll(bannerRef);
-  const Y2 = useTransform(scrollYProgress, [0.3, 1], ["60%", "-750%"]);
+  const Y2 = useTransform(scrollYProgress, [0.3, 1], ["15%", "-750%"]);
 
   const data = [
     {
@@ -67,8 +67,8 @@ const TrackAnimation = () => {
                   initial="hidden"
                   style={{ left: Y2 }}
                   transition={{
-                    ease: "cubic-bezier(.22,.68,0,1.71)",
-                    duration: 0.5,
+                    ease: "ease-in",
+                    duration: 1,
                   }}
                 >
                   {data.map((item, index) => (

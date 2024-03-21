@@ -165,7 +165,7 @@ class SlideshowClass {
     this.tl = gsap
       .timeline({
         defaults: {
-          duration: 1.2,
+          duration: 0.6,
         },
         onStart: () => {
           this.DOM.slides[this.current].classList.add("slide--current");

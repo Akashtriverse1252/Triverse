@@ -5,7 +5,7 @@ import mtestimonial from "../../image/m-testimonial.png";
 const index = () => {
   return (
     <>
-      <div className="quoteDIv">
+      <section className="quoteDIv">
         <div className="Circles" style={{ top: 929 }} />
         <img src={testimonial} alt="" className="desktop-show" />
         <img src={mtestimonial} alt="" className="mobile-show" />
@@ -58,7 +58,7 @@ const index = () => {
             business head of North India, based in Delhi, for SSCB Lintas.
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 };
