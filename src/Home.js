@@ -8,6 +8,7 @@ import Quote from "./components/Quote";
 import FAQ from "./components/FAQ/index";
 import SlidingSection from "./components/SlidingSection";
 import Banner from "./components/Banner";
+import Loader from "./components/Loader";
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -28,6 +29,7 @@ const Home = () => {
 
   return (
     <>
+      {/* <Loader /> */}
       <Header />
       <Banner />
       <div className="furtherSection z-10 relative">

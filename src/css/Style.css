@@ -141,7 +141,7 @@ section.banner {
   letter-spacing: 1px;
   line-height: 52px;
   color: #000000;
-  font-family: "Adobe Garamond Pro";
+  /* font-family: "Adobe Garamond Pro"; */
   text-wrap: wrap;
   font-weight: 400;
   width: 20ch;
@@ -159,7 +159,8 @@ section.banner {
   text-transform: uppercase;
   font-size: 80px;
   letter-spacing: 5px;
-  font-family: "Adobe Garamond Pro";
+  font-weight: 500;
+  /* font-family: "Adobe Garamond Pro"; */
 }
 p.about_us_cnt {
   font-size: 19px;
@@ -420,3 +421,27 @@ section.about_us {
   transition: max-height 0.25s ease-in;
 }
 
+.collection-list {
+  transition: cubic-bezier(0.2, 0.2, 0.118, 1) 0.1 s all 0.2s;
+}
+.orange_color {
+  fill: #ed8a61;
+}
+.yellow_color {
+  fill: #fac96d;
+}
+.quote2Div p {
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.quote2Div {
+  position: absolute;
+  bottom: 18%;
+  width: 40%;
+  left: 38%;
+}
+.quotecont svg {
+  height: 100px;
+  width: 100px;
+}

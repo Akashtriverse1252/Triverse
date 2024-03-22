@@ -1,13 +1,16 @@
 import React from "react";
 import testimonial from "../../image/testimonial.jpg";
 import mtestimonial from "../../image/m-testimonial.png";
+import Quote from "../../image/SVG/Quote";
+import SmallQuote from "../../image/SVG/SmallQuote";
 
 const index = () => {
   return (
     <>
       <section className="quoteDIv">
         <div className="Circles" style={{ top: 929 }} />
-        <img src={testimonial} alt="" className="desktop-show" />
+        {/* <img src={testimonial} alt="" className="desktop-show" /> */}
+         <Quote/>
         <img src={mtestimonial} alt="" className="mobile-show" />
         <div className="quote">
           <div
@@ -17,7 +20,8 @@ const index = () => {
             data-aos-once="true"
             data-aos-duration={1000}
           >
-            <img src="images/quote.png" alt="" />
+            {/* <img src="images/quote.png" alt="" /> */}
+            <SmallQuote/>
             <h4
               data-aos="fade-up"
               data-aos-delay={600}

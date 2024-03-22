@@ -1,5 +1,5 @@
 .track {
-  height: 300vh;
+  height: 350vh;
 }
 
 .sticky {
@@ -169,7 +169,7 @@
   transition: linear 0.254s all;
   z-index: -1;
 }
-.project-details-wrapper:hover:after {
+.portfolio-wrapper:hover .project-details-wrapper::after {
   background: linear-gradient(
     180deg,
     hsl(0deg 0% 0% / 1%) 21%,
@@ -197,9 +197,9 @@
   transition-delay: 0.5s;
 }
 
-.project-details-wrapper:hover .details_date,
-.project-details-wrapper:hover .details_subtitle,
-.project-details-wrapper:hover .details_title {
+.portfolio-wrapper:hover .details_date,
+.portfolio-wrapper:hover .details_subtitle,
+.portfolio-wrapper:hover .details_title {
   opacity: 1;
   bottom: 0;
 }

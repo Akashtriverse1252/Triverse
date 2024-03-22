@@ -35,7 +35,10 @@ const Index = () => {
     <>
       <WebLayout _sclass="about_us" _class="about_us_scn">
         <div className="about_us_cnt flex ">
-          <div className="DefaultPage2S1 ">
+          <div className="DefaultPage2S1 " data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-aos-duration="600">
             <div className="DefaultPage2S1Inner">
               <div className="OrangeRectangle "></div>
             </div>
@@ -44,88 +47,88 @@ const Index = () => {
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={0}
               >
-                <h3 className="font-normal">Trendy</h3>
+                <h3 className="">Trendy</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={1}
               >
-                <h3 className="font-normal">Branding</h3>
+                <h3 className="">Branding</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={2}
               >
-                <h3 className="font-normal">Responsive</h3>
+                <h3 className="">Responsive</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={3}
               >
-                <h3 className="font-normal">Design</h3>
+                <h3 className="">Design</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={4}
               >
-                <h3 className="font-normal">Fast</h3>
+                <h3 className="">Fast</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={5}
               >
-                <h3 className="font-normal">Creative</h3>
+                <h3 className="">Creative</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={6}
               >
-                <h3 className="font-normal">Quality</h3>
+                <h3 className="">Quality</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={7}
               >
-                <h3 className="font-normal">Social</h3>
+                <h3 className="">Social</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={8}
               >
-                <h3 className="font-normal">Website</h3>
+                <h3 className="">Website</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={9}
               >
-                <h3 className="font-normal">Advertising</h3>
+                <h3 className="">Advertising</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={10}
               >
-                <h3 className="font-normal">Proposition</h3>
+                <h3 className="">Proposition</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={11}
               >
-                <h3 className="font-normal">Value</h3>
+                <h3 className="">Value</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={12}
               >
-                <h3 className="font-normal">Custom</h3>
+                <h3 className="">Custom</h3>
               </div>
               <div
                 className="DefaultPage2AboutTitle DisplayNone"
                 data-index={13}
               >
-                <h3 className="font-normal">Packaging</h3>
+                <h3 className="">Packaging</h3>
               </div>
               <div className="DefaultPage2AboutTitle" data-index={14}>
-                <h3 className="font-normal">Strategy</h3>
+                <h3 className="">Strategy</h3>
               </div>
             </div>
           </div>
@@ -134,9 +137,9 @@ const Index = () => {
               <div
                 className="about_title"
                 data-aos="fade-up"
-                data-aos-delay={500}
+                data-aos-delay={200}
                 data-aos-once="true"
-                data-aos-duration={1000}
+                data-aos-duration={600}
               >
                 <h3>Top brand creative agency based in gurgaon</h3>
                 <div className="Line " />
@@ -144,9 +147,9 @@ const Index = () => {
               <div className="SpecialDesc floatL Width100 flex flex-col">
                 <p
                   data-aos="fade-up"
-                  data-aos-delay="500"
+                  data-aos-delay="300"
                   data-aos-once="true"
-                  data-aos-duration="1000"
+                  data-aos-duration="700"
                   class="text-base leading-7 mb-4 float-left w-full"
                 >
                   As a full-service brand and design agency, Triverse
@@ -162,9 +165,9 @@ const Index = () => {
                 >
                   <p
                     data-aos="fade-up"
-                    data-aos-delay="500"
+                    data-aos-delay="300"
                     data-aos-once="true"
-                    data-aos-duration="1000"
+                    data-aos-duration="700"
                     className="text-base leading-7 mb-4 float-left w-full"
                   >
                     Since 2008, we’ve been bringing storytelling, strategy and
@@ -179,9 +182,9 @@ const Index = () => {
                   >
                     <p
                       data-aos="fade-up"
-                      data-aos-delay="500"
+                      data-aos-delay="300"
                       data-aos-once="true"
-                      data-aos-duration="1000"
+                      data-aos-duration="700"
                       className="text-base leading-7 mb-4 float-left w-full"
                     >
                       We’re open-minded, our clients come from all sectors, from
@@ -190,9 +193,9 @@ const Index = () => {
                     </p>
                     <p
                       data-aos="fade-up"
-                      data-aos-delay="500"
+                      data-aos-delay="300"
                       data-aos-once="true"
-                      data-aos-duration="1000"
+                      data-aos-duration="700"
                       className="text-base leading-7 mb-4 float-left w-full"
                     >
                       We are small with big agency expertise. We evolve quickly
@@ -203,9 +206,9 @@ const Index = () => {
                     </p>
                     <p
                       data-aos="fade-up"
-                      data-aos-delay="500"
+                      data-aos-delay="300"
                       data-aos-once="true"
-                      data-aos-duration="1000"
+                      data-aos-duration="700"
                       className="text-base leading-7 mb-4 float-left w-full"
                     >
                       In a short period of time we became one of the top

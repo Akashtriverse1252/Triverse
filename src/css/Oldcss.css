@@ -250,16 +250,7 @@ body {
   width: 100%;
   float: left;
 }
-.quote2Div {
-  position: absolute;
-  bottom: 18%;
-  width: 40%;
-  left: 35%;
-}
-.quote2Div p {
-  font-size: 18px;
-  line-height: 32px;
-}
+
 .footer {
   width: 100%;
   float: left;
@@ -312,22 +303,7 @@ body {
   margin-bottom: 50px;
   position: relative;
 }
-.footeraddress h4 {
-  width: 100%;
-  float: left;
-  font-size: 19px;
-  line-height: 32px;
-}
-.footeraddress p {
-  font-size: 19px;
-  letter-spacing: 0.5px;
-}
-p.copyright {
-  font-size: 14px;
-  color: #b5b5b5;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
+
 .footerrow:before {
   content: "";
   border-bottom: dashed 1px #c1c1c1;

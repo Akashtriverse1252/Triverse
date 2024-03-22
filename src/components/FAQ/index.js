@@ -23,13 +23,19 @@ const Index = () => {
         <div
           class="heading"
           data-aos="fade-in"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-once="true"
-          data-aos-duration="1000"
+          data-aos-duration="600"
         >
           <h3>FAQ</h3>
         </div>
-        <div className="Faq_cnt">
+        <div
+          className="Faq_cnt"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-once="true"
+          data-aos-duration="700"
+        >
           <Accordion
             open={open === 1}
             animate={CUSTOM_ANIMATION}
@@ -44,7 +50,6 @@ const Index = () => {
             </AccordionHeader>
             <AccordionBody
               className=" font-Averta text-[20px] leading-relaxed font-[400] w-[88%] mx-auto  tracking-tight text-black mb-[30px]
-
             "
             >
               Branding is the way people perceive your business. This is usually

@@ -5,10 +5,27 @@ import image1 from "../../image/banner-01.jpg";
 const TrackAnimation = () => {
   const controls = useAnimation();
   const bannerRef = useRef(null);
-  const { scrollYProgress } = useScroll(bannerRef);
+  const { scrollYProgress } = useScroll(bannerRef, {
+    damping: 100,
+    inertia: 10,
+  });
   const Y2 = useTransform(scrollYProgress, [0.3, 1], ["15%", "-750%"]);
 
   const data = [
+    {
+      title: "Plumber",
+      subtitle: "Branding, Website, Digital",
+      date: "January 1, 2021",
+      image: "http://assurelp.triverseadvertising.com/images/Plumber.webp",
+      link: "#",
+    },
+    {
+      title: "premier energies",
+      subtitle: "Branding, Website, Digital",
+      date: "January 1, 2022",
+      image: "http://assurelp.triverseadvertising.com/images/premier.webp",
+      link: "#",
+    },
     {
       title: "RED COW",
       subtitle: "Branding, Website, Digital",
@@ -20,28 +37,21 @@ const TrackAnimation = () => {
       title: "Assure Pathlabs",
       subtitle: "Branding, Website, Digital",
       date: "January 1, 2021",
-      image: "http://assurelp.triverseadvertising.com/images/produc.webp",
+      image: "http://assurelp.triverseadvertising.com/images/ASSURE.webp",
       link: "#",
     },
     {
-      title: "SS-GROUP",
+      title: "SATYA GRUOP",
       subtitle: "Branding, Website, Digital",
-      date: "January 1, 2021",
-      image: "http://assurelp.triverseadvertising.com/images/prodct.webp",
+      date: "January 1, 2022",
+      image: "http://assurelp.triverseadvertising.com/images/satya.webp",
       link: "#",
     },
     {
-      title: "NETPLUS",
-      subtitle: "UI/UX, Design, Website Development",
+      title: "SS GROUP",
+      subtitle: "Branding, Website, Digital",
       date: "January 1, 2022",
-      image: "http://assurelp.triverseadvertising.com/images/produc.webp",
-      link: "#",
-    },
-    {
-      title: "FASTWAY",
-      subtitle: "UI/UX, Design, Website Development",
-      date: "January 1, 2022",
-      image: "http://assurelp.triverseadvertising.com/images/prodct.webp",
+      image: "http://assurelp.triverseadvertising.com/images/ss-group.webp",
       link: "#",
     },
   ];
@@ -66,10 +76,6 @@ const TrackAnimation = () => {
                   className="collection-list"
                   initial="hidden"
                   style={{ left: Y2 }}
-                  transition={{
-                    ease: "ease-in",
-                    duration: 1,
-                  }}
                 >
                   {data.map((item, index) => (
                     <div key={index} className="collection-item">
@@ -94,7 +100,7 @@ const TrackAnimation = () => {
                                 </div>
                               </div> */}
                               <div className="project-details-wrapper">
-                                <h1 className="details_title text-[38px] font-GaramondPro font-normal text-white  tracking-widest">
+                                <h1 className="details_title text-[38px] font-GaramondPro font-normal text-white uppercase  tracking-widest">
                                   {item.title}
                                 </h1>
                                 <div className="details_subtitle font-GaramondPro font-normal text-white text-[20px]">

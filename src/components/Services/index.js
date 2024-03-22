@@ -39,13 +39,19 @@ const Index = () => {
             <div
               className="heading"
               data-aos="fade-in"
-              data-aos-delay="500"
+              data-aos-delay="100"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="600"
             >
               <h3>full service branding and digital marketing services</h3>
             </div>
-            <div className="service-box">
+            <div
+              className="service-box"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
               <ServiceBox
                 title="branding"
                 items={[
